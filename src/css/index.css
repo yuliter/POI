@@ -1,0 +1,76 @@
+.App .head{
+    text-align: center;
+    height: 255px;
+    color: white;
+    background: url(../images/banner.jpg);
+    padding-top: 20px;
+}
+.head .searchBox{
+    height: 100px;
+}
+li{
+    display: inline-block;
+}
+.labelBox{
+    width: 80px;
+}
+.icBox{
+    font-size: 36px;
+}
+.liBox{
+    margin-left: 20px;
+    margin-bottom: 20px;
+    width: 300px;
+}
+.f14{
+    font-size: 14px;
+}
+.showUl{
+    margin-top: 20px;
+}
+.disBlock{
+    display:inline-block;
+}
+.w200{
+    width: 200px;
+}
+.f45{
+    font-size: 45px;
+}
+.check{
+    vertical-align: top;
+    margin-top: 25px;
+    margin-left: 35px;
+}
+.textCenter{
+    text-align: center;
+    color: deepskyblue;
+}
+.mt20{
+    margin-top: 20px;
+}
+.mt80{
+    margin-top: 80px;
+}
+.mt50{
+    margin-top: 50px;
+}
+.icDiv{
+    border: 2px solid;
+    border-radius: 50%;
+    width: 40px;
+}
+.mt10{
+    margin-top: 10px;
+}
+.iconqiandao {
+    color: deepskyblue;
+}
+.textLeft{
+    text-align: left;
+    padding-left: 125px;
+}
+.iconyonghu{
+    font-size: 30px;
+    margin-left: 88px;
+}
