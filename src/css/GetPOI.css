@@ -1,0 +1,21 @@
+.w65{
+    width: 65px;
+}
+.head{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+}
+.ml60{
+    margin-left: 60px;
+}
+.iconpingjia{
+    font-size: 40px;
+}
+.juxing{
+    width: 20px;
+    height: 20px;
+    border: 1px solid;
+    vertical-align: top;
+    margin-right: 15px;
+}

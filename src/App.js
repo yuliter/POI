@@ -3,72 +3,79 @@ import {Rate,Select} from 'zent'
 import './App.css';
 import 'zent/css/index.css';
 import '../src/css/index.css'
+import Checkins from "./Checkins"
+import GetPOI from "./GetPOI"
 
 class App extends Component {
   render() {
       const Option = Select.Option;
       const businessArea=["街道口","徐东","光谷"];
-
       return (
-      <div className="App">
-          <div className="head">
-              <div className="searchBox">
-                  <div className="textLeft">
-                      <Select placeholder="请选择商圈" width="100px">
+          <div>
+              {!true && <Checkins/>}
+              {!true && <div className="App">
+                  <div className="head">
+                      <div className="searchBox">
+                          <div className="textLeft">
+                              <Select placeholder="请选择商圈" width="100px">
+                                  {
+                                      businessArea.map(function (item,index) {
+                                          return <Option value={index} key={index}>{item}</Option>
+                                      })
+                                  }
+                              </Select>
+                              <i className="iconfont iconyonghu"></i>
+                          </div>
+                      </div>
+                      <div className="mt50">
+                          <ul>
+                              {
+                                  POIlabel.map(function (item,index) {
+                                      return <li key={index} className="labelBox">
+                                          <div>
+                                              <div className="disBlock icDiv">
+                                                  <i className={`${item.ic} iconfont icBox`}></i>
+                                              </div>
+                                          </div>
+                                          <div className="mt10">
+                                              {item.name}
+                                          </div>
+                                      </li>
+                                  })
+                              }
+                          </ul>
+                      </div>
+                  </div>
+                  <div className="showList">
+                      <ul className="showUl">
                           {
-                              businessArea.map(function (item,index) {
-                                  return <Option value={index} key={index}>{item}</Option>
+                              POI.map(function (item,index) {
+                                  return <li key={index} className="liBox">
+                                      <div className="disBlock w200">
+                                          <div className="imgBox">
+                                              <img src={item.imgUrl}/>
+                                          </div>
+                                          <div className="f14">
+                                              {item.title}
+                                          </div>
+                                          <div>
+                                              <Rate value={item.score}></Rate>
+                                          </div>
+                                      </div>
+                                      <div className="disBlock check">
+                                          <i className="iconfont iconqiandao f45"></i>
+                                          <div className="textCenter">签到</div>
+                                      </div>
+                                  </li>
                               })
                           }
-                      </Select>
-                      <i className="iconfont iconyonghu"></i>
+                      </ul>
                   </div>
-              </div>
-              <div className="mt50">
-                  <ul>
-                      {
-                          POIlabel.map(function (item,index) {
-                              return <li key={index} className="labelBox">
-                                  <div>
-                                      <div className="disBlock icDiv">
-                                          <i className={`${item.ic} iconfont icBox`}></i>
-                                      </div>
-                                  </div>
-                                  <div className="mt10">
-                                      {item.name}
-                                  </div>
-                              </li>
-                          })
-                      }
-                  </ul>
-              </div>
+              </div>}
+              {
+                  true && <GetPOI/>
+              }
           </div>
-          <div className="showList">
-              <ul className="showUl">
-                  {
-                      POI.map(function (item,index) {
-                          return <li key={index} className="liBox">
-                              <div className="disBlock w200">
-                                  <div className="imgBox">
-                                      <img src={item.imgUrl}/>
-                                  </div>
-                                  <div className="f14">
-                                      {item.title}
-                                  </div>
-                                  <div>
-                                      <Rate value={item.score}></Rate>
-                                  </div>
-                              </div>
-                              <div className="disBlock check">
-                                  <i className="iconfont iconqiandao f45"></i>
-                                  <div className="textCenter">签到</div>
-                              </div>
-                          </li>
-                      })
-                  }
-              </ul>
-          </div>
-      </div>
     );
   }
 }

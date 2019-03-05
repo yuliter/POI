@@ -1,0 +1,48 @@
+.f14{
+    font-size: 14px;
+}
+.inblock{
+    display: inline-block;
+}
+.w250{
+    width: 250px;
+}
+.h100{
+    height: 100px;
+}
+.mt50{
+    margin-top: 50px;
+}
+.ml20{
+    margin-left: 20px;
+}
+.pt20{
+    padding-top: 20px;
+}
+.mt30{
+    margin-top: 30px;
+}
+.tr{
+    text-align: right;
+}
+.ml70{
+    margin-left: 70px;
+}
+.tc{
+    text-align: center;
+}
+.box{
+    color: #666;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px 20px 33px;
+    border: 1px solid #e5e5e5;
+    box-shadow: 0 5px 14px 0 rgba(0,0,0,.1);
+}
+.h200{
+    height: 200px;
+}
+.h200 .zent-textarea{
+    height: 100%;
+}
+
