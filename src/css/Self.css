@@ -1,0 +1,63 @@
+.backgroud{
+    border: solid 1px ;
+    height: 190px;
+    text-align: center;
+    background: url("../images/userBackgroud.jpg");
+    background-size: 100%;
+}
+.bodyContent{
+    margin-top: 70px;
+    padding: 20px;
+}
+.w80{
+    width: 80px;
+}
+.w80 img{
+    width: 100%;
+}
+.labelBox{
+    width: 80px;
+    height: 80px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+.bodyContent .iconyonghu{
+    margin-left: 0;
+    color: #999;
+}
+.bodyContent{
+    color: #333;
+}
+.iconbiaoqian{
+    font-size: 30px;
+    color: #999;
+}
+.userBox{
+    width: 80px;
+    text-align: center;
+    display: inline-block;
+    margin-top: 140px;
+}
+.userBox img{
+    width: 100%;
+}
+.userBox .imgBox{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.labelContent{
+    color: #666;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px 20px 33px;
+    border: 1px solid #e5e5e5;
+    box-shadow: 0 5px 14px 0 rgba(0,0,0,.1);
+}
+.iconhuahua{
+    color: #999;
+}
+.iconwenyigongzuozhe,.iconkeji01,.iconmeishi1{
+    font-size: 40px;
+}

@@ -1,0 +1,16 @@
+.guess{
+    padding: 20px 20px 10px;
+    position: fixed;
+    background-color: #fff;
+    border: 1px solid #e5e5e5;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    z-index: 10;
+}
+.ml210{
+    margin-left: 230px;
+}
+.iconfanhui{
+    font-size: 20px;
+}

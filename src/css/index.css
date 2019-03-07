@@ -20,7 +20,7 @@ li{
 .liBox{
     margin-left: 20px;
     margin-bottom: 20px;
-    width: 300px;
+    width: 270px;
     color: #666;
     background-color: #fff;
     border-radius: 10px;
@@ -46,7 +46,7 @@ li{
 .check{
     vertical-align: top;
     margin-top: 25px;
-    margin-left: 35px;
+    margin-left: 20px;
 }
 .textCenter{
     text-align: center;

@@ -5,6 +5,8 @@ import 'zent/css/index.css';
 import '../src/css/index.css'
 import Checkins from "./Checkins"
 import GetPOI from "./GetPOI"
+import Like from "./Like"
+import Self from "./Self";
 
 class App extends Component {
   render() {
@@ -73,7 +75,13 @@ class App extends Component {
                   </div>
               </div>}
               {
-                  true && <GetPOI/>
+                  !true && <GetPOI/>
+              }
+              {
+                 !true && <Like/>
+              }
+              {
+                  true && <Self/>
               }
           </div>
     );

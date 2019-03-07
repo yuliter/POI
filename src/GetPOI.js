@@ -6,7 +6,7 @@ class GetPOI extends Component {
     render() {
         return (
             <div>
-                <div className="head">
+                <div className="header">
                     <div className="inblock">
                         <i className="iconfont iconfanhui"></i>
                     </div>
